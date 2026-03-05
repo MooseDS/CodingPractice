@@ -1,0 +1,18 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build and Run Kotlin",
+            "type": "shell",
+            "command": "kotlinc ${file} -cp \"%KOTLINC_HOME%\\lib\\kotlin-stdlib.jar\" -include-runtime -d ${fileBasenameNoExtension}.jar ; java -jar ${fileBasenameNoExtension}.jar",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always"
+            },
+            "problemMatcher": []
+        }
+    ]
+}
