@@ -31,5 +31,5 @@ fun main() = with(System.`in`.bufferedReader()) {
 
 }
 
-fun gcd(a: Int, b: Int): Int =
+private fun gcd(a: Int, b: Int): Int =
     if (b == 0) a else gcd(b, a % b)

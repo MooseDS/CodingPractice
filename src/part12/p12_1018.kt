@@ -54,7 +54,7 @@ fun getMin(arr: Array<Array<Char>>, i: Int, j: Int, startColor: Char): Int {
                 if (color == arr[a][b]) {
                     cnt++
                 }
-               c olor = if (color == 'W') 'B' else 'W'
+               color = if (color == 'W') 'B' else 'W'
             }
         }
         color = if (color == 'W') 'B' else 'W'

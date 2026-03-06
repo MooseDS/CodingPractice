@@ -1,4 +1,3 @@
-import java.io.BufferedReader
 import java.util.StringTokenizer
 
 fun main() = with(System.`in`.bufferedReader()) {
@@ -53,7 +52,7 @@ fun main() = with(System.`in`.bufferedReader()) {
     print(sb)
 }
 
-class DCQueue<T>(initialCapacity: Int = 4) {
+private class DCQueue<T>(initialCapacity: Int = 4) {
     private var capacity = initialCapacity
     private var queue = arrayOfNulls<Any>(capacity)
     private var front = 0

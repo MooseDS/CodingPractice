@@ -1,4 +1,4 @@
-class DCQueue<T>(initialCapacity: Int = 4) {
+private class CustomDCQueue<T>(initialCapacity: Int = 4) {
     private var capacity = initialCapacity
     private var queue = arrayOfNulls<Any>(capacity)
     private var front = 0
@@ -17,7 +17,7 @@ class DCQueue<T>(initialCapacity: Int = 4) {
         size++
     }
 
-    fun addFirst(itme: T) {
+    fun addFirst(item: T) {
         if (isFull()) reallocate(capacity * 2)
         front = (front - 1 + capacity) % capacity
         queue[front] = item

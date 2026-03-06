@@ -1,4 +1,3 @@
-import java.io.BufferedReader
 
 fun main() = with(System.`in`.bufferedReader()) {
     val n = readLine().toInt()
@@ -26,7 +25,7 @@ fun main() = with(System.`in`.bufferedReader()) {
         i-- 
     }
 
-    val sb = StringBuilder
+    val sb = StringBuilder()
     for (i in 0 until n) {
         println(sortedArr[i])
     }
