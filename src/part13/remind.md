@@ -94,6 +94,8 @@ function merge(arr, start, mid, end) {
 
     while j <= size2:
         arr[k] = right[j]
+        j = j + 1
+        k = k + 1
 }
 ```
 
