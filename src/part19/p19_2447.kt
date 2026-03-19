@@ -1,4 +1,4 @@
-val sb = StringBuilder()
+private val sb = StringBuilder()
 fun main() = with(System.`in`.bufferedReader()) {
     val n = readLine().toInt()
     for (i in 0..< n) {
