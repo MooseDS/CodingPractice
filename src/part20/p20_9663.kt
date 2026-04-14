@@ -6,6 +6,9 @@ fun main() = with(System.`in`.bufferedReader()) {
     println(cnt)
 }
 
+// 1. 가로, 세로, 왼쪽 대각선, 오른쪽 대각선에 자리수 만큼의 불가능 자리를 바로바로 체크한다
+// 2. Bit 값으로 제어한다
+
 private var cnt = 0
 fun nQueen(arr: IntArray, n: Int, k: Int) {
     if (n == k) {

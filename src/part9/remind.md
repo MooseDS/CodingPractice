@@ -16,7 +16,7 @@ var i = 2
 while (i * i < n + 1) {
     if (isPrime[i]) {
         var j = i * i
-        while (j < 10001) {
+        while (j < n + 1) {
             isPrime[j] = false
             j += i
         }
