@@ -1,3 +1,5 @@
+package part15
+
 import java.util.StringTokenizer
 
 fun main() = with(System.`in`.bufferedReader()) {

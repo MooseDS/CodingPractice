@@ -54,7 +54,7 @@ private fun findQueenDepth(arr: IntArray, y:Int, x:Int, depth: Int): Boolean {
 }
 
 /*
-fun main() {
+fun part15.main() {
     val n = readln().toInt()
     val full = (1 shl n) - 1
     var count = 0
